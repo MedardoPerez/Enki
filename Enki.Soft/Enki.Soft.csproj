@@ -9,5 +9,7 @@
     <PackageReference Include="Microsoft.AspNetCore.App"/>
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All"/>
     <PackageReference Include="MySqlConnector" Version="0.47.1"/>
+    <PackageReference Include="MySql.Data.Entity" Version="7.0.2-dmr"/>
+    <PackageReference Include="EntityFramework" Version="6.2.0"/>
   </ItemGroup>
 </Project>

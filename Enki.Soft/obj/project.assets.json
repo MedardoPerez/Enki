@@ -2,6 +2,28 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v2.1": {
+      "EntityFramework/6.2.0": {
+        "type": "package",
+        "compile": {
+          "lib/net45/EntityFramework.SqlServer.dll": {},
+          "lib/net45/EntityFramework.dll": {}
+        },
+        "runtime": {
+          "lib/net45/EntityFramework.SqlServer.dll": {},
+          "lib/net45/EntityFramework.dll": {}
+        }
+      },
+      "Google.ProtocolBuffers/2.4.1.555": {
+        "type": "package",
+        "compile": {
+          "lib/net40/Google.ProtocolBuffers.Serialization.dll": {},
+          "lib/net40/Google.ProtocolBuffers.dll": {}
+        },
+        "runtime": {
+          "lib/net40/Google.ProtocolBuffers.Serialization.dll": {},
+          "lib/net40/Google.ProtocolBuffers.dll": {}
+        }
+      },
       "Microsoft.AspNet.WebApi.Client/5.2.6": {
         "type": "package",
         "dependencies": {
@@ -2601,6 +2623,31 @@
           }
         }
       },
+      "MySql.Data/7.0.2-DMR": {
+        "type": "package",
+        "dependencies": {
+          "Google.ProtocolBuffers": "2.4.1.555"
+        },
+        "compile": {
+          "lib/net45/MySql.Data.dll": {}
+        },
+        "runtime": {
+          "lib/net45/MySql.Data.dll": {}
+        }
+      },
+      "MySql.Data.Entity/7.0.2-DMR": {
+        "type": "package",
+        "dependencies": {
+          "EntityFramework": "6.0.0",
+          "MySql.Data": "7.0.2-DMR"
+        },
+        "compile": {
+          "lib/net45/MySql.Data.Entity.EF6.dll": {}
+        },
+        "runtime": {
+          "lib/net45/MySql.Data.Entity.EF6.dll": {}
+        }
+      },
       "MySqlConnector/0.47.1": {
         "type": "package",
         "compile": {
@@ -4346,6 +4393,94 @@
     }
   },
   "libraries": {
+    "EntityFramework/6.2.0": {
+      "sha512": "ptGyXOf26qLrtn+2doAmylIlCxOnBJANwlyyLrXDmqIk9O18IzLWHyxDwwAyhgXkxmbiaA0WNpRy67WRReInBw==",
+      "type": "package",
+      "path": "entityframework/6.2.0",
+      "files": [
+        "EntityFramework.6.2.0.nupkg.sha512",
+        "EntityFramework.nuspec",
+        "content/net40/App.config.transform",
+        "content/net40/Web.config.transform",
+        "lib/net40/EntityFramework.SqlServer.dll",
+        "lib/net40/EntityFramework.SqlServer.xml",
+        "lib/net40/EntityFramework.dll",
+        "lib/net40/EntityFramework.xml",
+        "lib/net45/EntityFramework.SqlServer.dll",
+        "lib/net45/EntityFramework.SqlServer.xml",
+        "lib/net45/EntityFramework.dll",
+        "lib/net45/EntityFramework.xml",
+        "tools/EntityFramework.PowerShell.Utility.dll",
+        "tools/EntityFramework.PowerShell.dll",
+        "tools/EntityFramework.psd1",
+        "tools/EntityFramework.psm1",
+        "tools/about_EntityFramework.help.txt",
+        "tools/init.ps1",
+        "tools/install.ps1",
+        "tools/migrate.exe"
+      ]
+    },
+    "Google.ProtocolBuffers/2.4.1.555": {
+      "sha512": "9V9QM1QOZW0REszbmoQmN7E5RBtrTA1szrTTGmk0MKO5OxKLLX+yGEcaCIUEU1TE+wDTClAi5wmU5fLpNKw/1A==",
+      "type": "package",
+      "path": "google.protocolbuffers/2.4.1.555",
+      "files": [
+        ".signature.p7s",
+        "google.protocolbuffers.2.4.1.555.nupkg.sha512",
+        "google.protocolbuffers.nuspec",
+        "lib/cf20/Google.ProtocolBuffers.Serialization.dll",
+        "lib/cf20/Google.ProtocolBuffers.Serialization.xml",
+        "lib/cf20/Google.ProtocolBuffers.dll",
+        "lib/cf20/Google.ProtocolBuffers.xml",
+        "lib/cf35/Google.ProtocolBuffers.Serialization.dll",
+        "lib/cf35/Google.ProtocolBuffers.Serialization.xml",
+        "lib/cf35/Google.ProtocolBuffers.dll",
+        "lib/cf35/Google.ProtocolBuffers.xml",
+        "lib/net20/Google.ProtocolBuffers.Serialization.dll",
+        "lib/net20/Google.ProtocolBuffers.Serialization.xml",
+        "lib/net20/Google.ProtocolBuffers.dll",
+        "lib/net20/Google.ProtocolBuffers.xml",
+        "lib/net35/Google.ProtocolBuffers.Serialization.dll",
+        "lib/net35/Google.ProtocolBuffers.Serialization.xml",
+        "lib/net35/Google.ProtocolBuffers.dll",
+        "lib/net35/Google.ProtocolBuffers.xml",
+        "lib/net40/Google.ProtocolBuffers.Serialization.dll",
+        "lib/net40/Google.ProtocolBuffers.Serialization.xml",
+        "lib/net40/Google.ProtocolBuffers.dll",
+        "lib/net40/Google.ProtocolBuffers.xml",
+        "lib/portable-net40+sl4+sl5+wp7+wp8+win8/Google.ProtocolBuffers.Serialization.dll",
+        "lib/portable-net40+sl4+sl5+wp7+wp8+win8/Google.ProtocolBuffers.Serialization.xml",
+        "lib/portable-net40+sl4+sl5+wp7+wp8+win8/Google.ProtocolBuffers.dll",
+        "lib/portable-net40+sl4+sl5+wp7+wp8+win8/Google.ProtocolBuffers.xml",
+        "lib/sl20/Google.ProtocolBuffers.Serialization.dll",
+        "lib/sl20/Google.ProtocolBuffers.Serialization.xml",
+        "lib/sl20/Google.ProtocolBuffers.dll",
+        "lib/sl20/Google.ProtocolBuffers.xml",
+        "lib/sl30/Google.ProtocolBuffers.Serialization.dll",
+        "lib/sl30/Google.ProtocolBuffers.Serialization.xml",
+        "lib/sl30/Google.ProtocolBuffers.dll",
+        "lib/sl30/Google.ProtocolBuffers.xml",
+        "lib/sl40/Google.ProtocolBuffers.Serialization.dll",
+        "lib/sl40/Google.ProtocolBuffers.Serialization.xml",
+        "lib/sl40/Google.ProtocolBuffers.dll",
+        "lib/sl40/Google.ProtocolBuffers.xml",
+        "tools/CHANGES.txt",
+        "tools/Google.ProtocolBuffers.Serialization.dll",
+        "tools/Google.ProtocolBuffers.dll",
+        "tools/ProtoBench.exe",
+        "tools/ProtoDump.exe",
+        "tools/ProtoGen.exe",
+        "tools/ProtoGen.exe.config",
+        "tools/ProtoMunge.exe",
+        "tools/google/protobuf/compiler/plugin.proto",
+        "tools/google/protobuf/csharp_options.proto",
+        "tools/google/protobuf/descriptor.proto",
+        "tools/license.txt",
+        "tools/protoc-license.txt",
+        "tools/protoc.exe",
+        "tools/tutorial/addressbook.proto"
+      ]
+    },
     "Microsoft.AspNet.WebApi.Client/5.2.6": {
       "sha512": "rMDlyePoxggkmN/qgha1+BR2Uy+dOr38xKCQOPfVNKGY07R2nYJGMTKJFE1XFgwD70RYUNazf2fqutjJF18XgQ==",
       "type": "package",
@@ -6774,6 +6909,42 @@
         "runtimes/win/lib/netstandard2.0/Microsoft.Win32.Registry.dll",
         "useSharedDesignerContext.txt",
         "version.txt"
+      ]
+    },
+    "MySql.Data/7.0.2-DMR": {
+      "sha512": "aFh0LHYXcPHNQCnEtbPboDvCXGoQG0MSB1X3SdqOfXplNN8Tm8DW73NoCie56Hp1UArB+HwEjpEAiLginHscMw==",
+      "type": "package",
+      "path": "mysql.data/7.0.2-dmr",
+      "files": [
+        ".signature.p7s",
+        "CHANGES",
+        "Readme.txt",
+        "content/app.config.transform",
+        "content/web.config.transform",
+        "lib/net40/MySql.Data.XML",
+        "lib/net40/MySql.Data.dll",
+        "lib/net45/MySql.Data.XML",
+        "lib/net45/MySql.Data.dll",
+        "mysql.data.7.0.2-dmr.nupkg.sha512",
+        "mysql.data.nuspec"
+      ]
+    },
+    "MySql.Data.Entity/7.0.2-DMR": {
+      "sha512": "W9BFGN0WROKURotVJXnNvuvdGeWoiJbVaANCIm9HmfItfqRMhoHNdJGOjRhSvIzd2ZeyCjgJ0VPHGrqO2+04gA==",
+      "type": "package",
+      "path": "mysql.data.entity/7.0.2-dmr",
+      "files": [
+        ".signature.p7s",
+        "CHANGES",
+        "Readme.txt",
+        "content/app.config.transform",
+        "content/web.config.transform",
+        "lib/net40/MySql.Data.Entity.EF6.XML",
+        "lib/net40/MySql.Data.Entity.EF6.dll",
+        "lib/net45/MySql.Data.Entity.EF6.XML",
+        "lib/net45/MySql.Data.Entity.EF6.dll",
+        "mysql.data.entity.7.0.2-dmr.nupkg.sha512",
+        "mysql.data.entity.nuspec"
       ]
     },
     "MySqlConnector/0.47.1": {
@@ -11519,9 +11690,11 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
+      "EntityFramework >= 6.2.0",
       "Microsoft.AspNetCore.App >= 2.1.1",
       "Microsoft.AspNetCore.Razor.Design >= 2.1.2",
       "Microsoft.NETCore.App >= 2.1.0",
+      "MySql.Data.Entity >= 7.0.2-dmr",
       "MySqlConnector >= 0.47.1"
     ]
   },
@@ -11532,11 +11705,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\MJPO\\Enki.Soft\\Enki.Soft\\Enki.Soft.csproj",
+      "projectUniqueName": "C:\\MJPO\\Enki.Soft\\Enki.Soft\\Enki.Soft.csproj",
       "projectName": "Enki.Soft",
-      "projectPath": "c:\\MJPO\\Enki.Soft\\Enki.Soft\\Enki.Soft.csproj",
+      "projectPath": "C:\\MJPO\\Enki.Soft\\Enki.Soft\\Enki.Soft.csproj",
       "packagesPath": "C:\\Users\\mperez\\.nuget\\packages\\",
-      "outputPath": "c:\\MJPO\\Enki.Soft\\Enki.Soft\\obj\\",
+      "outputPath": "C:\\MJPO\\Enki.Soft\\Enki.Soft\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -11564,6 +11737,10 @@
     "frameworks": {
       "netcoreapp2.1": {
         "dependencies": {
+          "EntityFramework": {
+            "target": "Package",
+            "version": "[6.2.0, )"
+          },
           "Microsoft.AspNetCore.App": {
             "suppressParent": "All",
             "target": "Package",
@@ -11580,6 +11757,10 @@
             "version": "[2.1.0, )",
             "autoReferenced": true
           },
+          "MySql.Data.Entity": {
+            "target": "Package",
+            "version": "[7.0.2-dmr, )"
+          },
           "MySqlConnector": {
             "target": "Package",
             "version": "[0.47.1, )"
@@ -11592,5 +11773,47 @@
         "warn": true
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'EntityFramework 6.2.0' was restored using '.NETFramework,Version=v4.6.1' instead of the project target framework '.NETCoreApp,Version=v2.1'. This package may not be fully compatible with your project.",
+      "libraryId": "EntityFramework",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v2.1"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Google.ProtocolBuffers 2.4.1.555' was restored using '.NETFramework,Version=v4.6.1' instead of the project target framework '.NETCoreApp,Version=v2.1'. This package may not be fully compatible with your project.",
+      "libraryId": "Google.ProtocolBuffers",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v2.1"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'MySql.Data 7.0.2-DMR' was restored using '.NETFramework,Version=v4.6.1' instead of the project target framework '.NETCoreApp,Version=v2.1'. This package may not be fully compatible with your project.",
+      "libraryId": "MySql.Data",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v2.1"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'MySql.Data.Entity 7.0.2-DMR' was restored using '.NETFramework,Version=v4.6.1' instead of the project target framework '.NETCoreApp,Version=v2.1'. This package may not be fully compatible with your project.",
+      "libraryId": "MySql.Data.Entity",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v2.1"
+      ]
+    }
+  ]
 }

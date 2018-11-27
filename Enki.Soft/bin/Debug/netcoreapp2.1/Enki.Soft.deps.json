@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.1",
-    "signature": "9cba1459851d170294eb729946cdcacd995042aa"
+    "signature": "b344e8911e5effe0ebe16e1c44ab974c2dbbae95"
   },
   "compilationOptions": {
     "defines": [
@@ -24,9 +24,11 @@
     ".NETCoreApp,Version=v2.1": {
       "Enki.Soft/1.0.0": {
         "dependencies": {
+          "EntityFramework": "6.2.0",
           "Microsoft.AspNetCore.App": "2.1.1",
           "Microsoft.AspNetCore.Razor.Design": "2.1.2",
           "Microsoft.NETCore.App": "2.1.0",
+          "MySql.Data.Entity": "7.0.2-DMR",
           "MySqlConnector": "0.47.1"
         },
         "runtime": {
@@ -34,6 +36,38 @@
         },
         "compile": {
           "Enki.Soft.dll": {}
+        }
+      },
+      "EntityFramework/6.2.0": {
+        "runtime": {
+          "lib/net45/EntityFramework.SqlServer.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.2.61023.0"
+          },
+          "lib/net45/EntityFramework.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.2.61023.0"
+          }
+        },
+        "compile": {
+          "lib/net45/EntityFramework.SqlServer.dll": {},
+          "lib/net45/EntityFramework.dll": {}
+        }
+      },
+      "Google.ProtocolBuffers/2.4.1.555": {
+        "runtime": {
+          "lib/net40/Google.ProtocolBuffers.Serialization.dll": {
+            "assemblyVersion": "2.4.1.555",
+            "fileVersion": "2.4.1.555"
+          },
+          "lib/net40/Google.ProtocolBuffers.dll": {
+            "assemblyVersion": "2.4.1.555",
+            "fileVersion": "2.4.1.555"
+          }
+        },
+        "compile": {
+          "lib/net40/Google.ProtocolBuffers.Serialization.dll": {},
+          "lib/net40/Google.ProtocolBuffers.dll": {}
         }
       },
       "Microsoft.AspNetCore.Razor.Design/2.1.2": {},
@@ -203,6 +237,35 @@
       },
       "Microsoft.NETCore.Platforms/2.1.0": {},
       "Microsoft.NETCore.Targets/2.1.0": {},
+      "MySql.Data/7.0.2-DMR": {
+        "dependencies": {
+          "Google.ProtocolBuffers": "2.4.1.555"
+        },
+        "runtime": {
+          "lib/net45/MySql.Data.dll": {
+            "assemblyVersion": "7.0.2.0",
+            "fileVersion": "7.0.2.0"
+          }
+        },
+        "compile": {
+          "lib/net45/MySql.Data.dll": {}
+        }
+      },
+      "MySql.Data.Entity/7.0.2-DMR": {
+        "dependencies": {
+          "EntityFramework": "6.2.0",
+          "MySql.Data": "7.0.2-DMR"
+        },
+        "runtime": {
+          "lib/net45/MySql.Data.Entity.EF6.dll": {
+            "assemblyVersion": "7.0.2.0",
+            "fileVersion": "7.0.2.0"
+          }
+        },
+        "compile": {
+          "lib/net45/MySql.Data.Entity.EF6.dll": {}
+        }
+      },
       "MySqlConnector/0.47.1": {
         "runtime": {
           "lib/netcoreapp2.1/MySqlConnector.dll": {
@@ -3167,6 +3230,20 @@
       "serviceable": false,
       "sha512": ""
     },
+    "EntityFramework/6.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ptGyXOf26qLrtn+2doAmylIlCxOnBJANwlyyLrXDmqIk9O18IzLWHyxDwwAyhgXkxmbiaA0WNpRy67WRReInBw==",
+      "path": "entityframework/6.2.0",
+      "hashPath": "entityframework.6.2.0.nupkg.sha512"
+    },
+    "Google.ProtocolBuffers/2.4.1.555": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-9V9QM1QOZW0REszbmoQmN7E5RBtrTA1szrTTGmk0MKO5OxKLLX+yGEcaCIUEU1TE+wDTClAi5wmU5fLpNKw/1A==",
+      "path": "google.protocolbuffers/2.4.1.555",
+      "hashPath": "google.protocolbuffers.2.4.1.555.nupkg.sha512"
+    },
     "Microsoft.AspNetCore.Razor.Design/2.1.2": {
       "type": "package",
       "serviceable": true,
@@ -3215,6 +3292,20 @@
       "sha512": "sha512-etaYwrLZQUS+b3UWTpCnUggd6SQ/ZIkZ5pHnoR7+dIWt/wp2Rv3CvMKOZISsrt7FYCHKwCxfcepuuyEWkQxADg==",
       "path": "microsoft.netcore.targets/2.1.0",
       "hashPath": "microsoft.netcore.targets.2.1.0.nupkg.sha512"
+    },
+    "MySql.Data/7.0.2-DMR": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-aFh0LHYXcPHNQCnEtbPboDvCXGoQG0MSB1X3SdqOfXplNN8Tm8DW73NoCie56Hp1UArB+HwEjpEAiLginHscMw==",
+      "path": "mysql.data/7.0.2-dmr",
+      "hashPath": "mysql.data.7.0.2-dmr.nupkg.sha512"
+    },
+    "MySql.Data.Entity/7.0.2-DMR": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-W9BFGN0WROKURotVJXnNvuvdGeWoiJbVaANCIm9HmfItfqRMhoHNdJGOjRhSvIzd2ZeyCjgJ0VPHGrqO2+04gA==",
+      "path": "mysql.data.entity/7.0.2-dmr",
+      "hashPath": "mysql.data.entity.7.0.2-dmr.nupkg.sha512"
     },
     "MySqlConnector/0.47.1": {
       "type": "package",
