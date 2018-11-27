@@ -13,10 +13,11 @@ using ENKI.SOFT.Models.Infraestructura.Core;
 
 namespace ENKI.SOFT.Models.Infraestructura
 {
+    // [DbConfigurationType(typeof(MySql.Data.Entity.MySqlEFConfiguration))]
     public class BCUnitOfWork : DbContext
     {
         public BCUnitOfWork(string connectionString)
-           : base(connectionString)
+           : base("server=31.220.104.1;user id=u941868463_smh;password=Smh123;database=u941868463_smh")
         {
             Database.SetInitializer<BCUnitOfWork>(null);
         }
