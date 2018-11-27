@@ -1,6 +1,6 @@
 using System;
 
-namespace ENKI.SOFT.Models.Maps
+namespace ENKI.SOFT.Models.Entidades
 {
     public abstract class Entity
     {

@@ -8,8 +8,8 @@ using System.Linq;
 using System.Reflection;
 using System.Text;
 using System.Text.RegularExpressions;
+using ENKI.SOFT.Models.Entidades;
 using ENKI.SOFT.Models.Infraestructura.Core;
-using ENKI.SOFT.Models.Maps;
 
 namespace ENKI.SOFT.Models.Infraestructura
 {

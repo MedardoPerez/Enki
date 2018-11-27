@@ -1,4 +1,5 @@
-using ENKI.SOFT.Models.Maps;
+
+using ENKI.SOFT.Models.Entidades;
 
 namespace ENKI.SOFT.Models.Infraestructura.Core
 {
