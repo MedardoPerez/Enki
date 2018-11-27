@@ -1,0 +1,14 @@
+C:\MJPO\Enki.Soft\Enki.Soft\bin\Debug\netcoreapp2.1\Enki.Soft.deps.json
+C:\MJPO\Enki.Soft\Enki.Soft\bin\Debug\netcoreapp2.1\Enki.Soft.runtimeconfig.json
+C:\MJPO\Enki.Soft\Enki.Soft\bin\Debug\netcoreapp2.1\Enki.Soft.runtimeconfig.dev.json
+C:\MJPO\Enki.Soft\Enki.Soft\bin\Debug\netcoreapp2.1\Enki.Soft.dll
+C:\MJPO\Enki.Soft\Enki.Soft\bin\Debug\netcoreapp2.1\Enki.Soft.pdb
+C:\MJPO\Enki.Soft\Enki.Soft\obj\Debug\netcoreapp2.1\Enki.Soft.csprojAssemblyReference.cache
+C:\MJPO\Enki.Soft\Enki.Soft\obj\Debug\netcoreapp2.1\Enki.Soft.csproj.CoreCompileInputs.cache
+C:\MJPO\Enki.Soft\Enki.Soft\obj\Debug\netcoreapp2.1\Enki.Soft.RazorAssemblyInfo.cache
+C:\MJPO\Enki.Soft\Enki.Soft\obj\Debug\netcoreapp2.1\Enki.Soft.RazorAssemblyInfo.cs
+C:\MJPO\Enki.Soft\Enki.Soft\obj\Debug\netcoreapp2.1\Enki.Soft.AssemblyInfoInputs.cache
+C:\MJPO\Enki.Soft\Enki.Soft\obj\Debug\netcoreapp2.1\Enki.Soft.AssemblyInfo.cs
+C:\MJPO\Enki.Soft\Enki.Soft\obj\Debug\netcoreapp2.1\Enki.Soft.RazorTargetAssemblyInfo.cache
+C:\MJPO\Enki.Soft\Enki.Soft\obj\Debug\netcoreapp2.1\Enki.Soft.dll
+C:\MJPO\Enki.Soft\Enki.Soft\obj\Debug\netcoreapp2.1\Enki.Soft.pdb
